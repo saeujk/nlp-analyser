@@ -1,0 +1,70 @@
+{
+    "one_shot_prompting": {
+        "description": "Create a thorough prompt with example outputs to get consistent, structured responses.",
+        "prompt": "
+        Analyze these product reviews and provide:
+        1. Key positive features customers appreciate
+        2. Common pain points or issues mentioned
+        3. Specific improvement suggestions based on customer feedback
+        4. Emerging trends or patterns in customer expectations
+
+        Example output format:
+        **Positive Highlights**
+        - [List of positive features]
+
+        **Improvement Areas**
+        - [List of issues]
+
+        **Recommended Actions**
+        - [Specific improvement suggestions]
+
+        **Emerging Trends**
+        - [Patterns in customer expectations]
+        "
+    },
+    "aspect_based_analysis": {
+        "description": "Direct the model to break down feedback by specific product aspects.",
+        "prompt": "
+        Analyze these reviews and categorize feedback by the following aspects:
+        - Durability
+        - Usability
+        - Design
+        - Value for money
+        - Performance
+
+        For each aspect, identify:
+        1. Current strengths
+        2. Areas needing improvement
+        3. Specific customer suggestions
+        "
+    },
+    "sentiment_breakdown": {
+        "description": "Ask the model to provide sentiment analysis with quantifiable metrics.",
+        "prompt": "
+        Analyze these product reviews and provide:
+        1. Overall sentiment score (1-10)
+        2. Sentiment breakdown by product feature
+        3. Comparison with previous period data
+        4. Sentiment trends over time
+        "
+    },
+    "topic_modeling": {
+        "description": "Have the model identify recurring themes in the reviews.",
+        "prompt": "
+        Identify the top 5 recurring topics in these reviews and for each topic provide:
+        1. Representative customer quotes
+        2. Sentiment associated with this topic
+        3. Potential product improvements addressing this topic
+        4. Estimated impact on customer satisfaction if addressed
+        "
+    },
+    "actionable_recommendations": {
+        "description": "Explicitly ask for practical, implementable suggestions.",
+        "prompt": "
+        Based on these customer reviews, provide 3-5 specific, actionable product improvements that would address the most common customer complaints. For each suggestion, include:
+        1. The specific issue it addresses
+        2. Estimated implementation difficulty (low/medium/high)
+        3. Potential impact on customer satisfaction
+        "
+    }
+}
